@@ -17,3 +17,8 @@ Then I've created a GAN net [Tensorflow](https://www.tensorflow.org) and [Keras]
 The most interesting in the above image is how to the GAN net extracted the most important signal (e.g. bell at the start of signal).
 
 You can read the code in [this notebook](gan_for_motorimagery.ipynb)
+
+# Dataset and example code
+
+The code calles [train_gan_AT01.py](train_gan_AT01.py) contains a simple example of the GAN process with a AT01 dataset from one subject, for download this datase you can direct download from here:
+[A01T.npz](https://raw.githubusercontent.com/bregydoc/bcidatasetIV2a/master/A01T.npz).
