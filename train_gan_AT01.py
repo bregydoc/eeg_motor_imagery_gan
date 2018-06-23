@@ -184,7 +184,6 @@ class GAN():
         print(errors[-1])
 
     def sample_signal(self, epoch):
-
         num_signals = 273
         noise = np.random.normal(0, 1, (num_signals, self.latent_dim))
         gen_signal = self.generator.predict(noise)
@@ -212,4 +211,4 @@ maxft = fixed_trials.max()
 fixed_trials = ((fixed_trials - minft)/(maxft - minft))
 
 gan = GAN(3, 1875)
-gan.train(fixed_trials, epochs=1000, batch_size=50)
+gan.train(fixed_trials, epochs=10000, batch_size=50)
